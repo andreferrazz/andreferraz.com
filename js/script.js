@@ -1,7 +1,7 @@
 const btnIcon = document.getElementById('menu-mobile-icon');
 const menuLinks = document.getElementById('links');
 
-let menuIsOpen = true;
+let menuIsOpen = false;
 
 const toggleMenu = () => {
   console.log(menuLinks);
