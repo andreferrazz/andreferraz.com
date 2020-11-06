@@ -1,3 +1,10 @@
+/* 
+  #c3e0e5 - Baby Blue
+  #5885af - Blue Gray
+  #41729f - Midnight Blue
+  #274472 - Dark Blue
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -31,12 +38,11 @@ img {
 
 #welcome-section .wrapper {
   height: 100%;
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #ddd;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
