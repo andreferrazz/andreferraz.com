@@ -3,6 +3,11 @@ const menuLinks = document.getElementById('links');
 
 let menuIsOpen = false;
 
+let example = {
+  some: 'lsdfklsadlfj',
+  other: 'ssakjdh',
+}
+
 const toggleMenu = () => {
   console.log(menuLinks);
   if (menuIsOpen) {
