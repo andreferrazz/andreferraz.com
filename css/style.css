@@ -23,17 +23,19 @@ img {
   height: auto;
 }
 
-.image-wrapper{
+.image-wrapper {
   display: flex;
 }
 
 .section-title {
   font-size: 3rem;
+  line-height: 3rem;
   font-weight: 700;
   text-align: center;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Welcome section */
+
 #welcome-section {
   height: 100vh;
   min-height: 500px;
@@ -70,6 +72,7 @@ img {
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> About section */
+
 #about-section {
   padding: 100px 20px 130px;
 }
@@ -89,9 +92,10 @@ img {
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Projects section */
+
 .projects-content {
   max-width: 1100px;
-  margin: 20px auto 0;
+  margin: 20px auto 50px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -103,7 +107,7 @@ img {
   margin: 0 5px;
   margin-bottom: 30px;
   box-shadow: 10px 10px 0 0 #5885af;
-  /* border-radius: 7px; */
+  border-radius: 5px;
 }
 
 .project-tile .project-image {
@@ -153,27 +157,88 @@ pre .string {
   color: #fada5e;
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Contact section */
+
+#contact {
+  padding-top: 50px;
+  background: linear-gradient(30deg, #41729f, #5885af);
+  color: white;
+}
+
+.contact-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 80px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.social-link {
+  font-size: 1rem;
+  background-color: #274472;
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 rgba(255, 255, 255, 0.8);
+  transition-duration: 200ms;
+}
+
+.social-link:last-child {
+  margin: 0;
+}
+
+.social-link:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 0 rgba(255, 255, 255, 0.8);
+}
+
+.social-link i {
+  font-size: 2rem;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Footer section */
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid #c3e0e5;
+  font-weight: 400;
+}
+
 /* 
     >>>>>>>>>>>>>>>>>>>>>> Breakpoints <<<<<<<<<<<<<<<<<<<<<<< 
 */
+
 @media only screen and (min-width: 600px) {
   #welcome-section .image-wrapper {
     max-width: 200px;
   }
-  
   #welcome-section h1 {
     font-size: 5rem;
   }
-  
   #welcome-section p {
     font-size: 2rem;
   }
-
   #about-section p {
     text-align: center;
   }
 }
-@media only screen and (min-width: 1024px){
+
+@media only screen and (min-width: 1024px) {
   #welcome-section h1 {
     font-size: 7rem;
   }
