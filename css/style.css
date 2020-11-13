@@ -102,7 +102,7 @@ img {
 }
 
 .project-tile {
-  max-width: max-content;
+  width: 280px;
   overflow: hidden;
   margin: 0 5px;
   margin-bottom: 30px;
@@ -235,6 +235,9 @@ pre .string {
   }
   #about-section p {
     text-align: center;
+  }
+  .project-tile {
+    width: 345px;
   }
   .project-tile .project-image {
     height: 300px;
