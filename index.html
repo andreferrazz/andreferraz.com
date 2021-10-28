@@ -18,56 +18,131 @@
 
 <body>
 
-  <nav id="navbar">
+  <header class="header">
     <div class="content">
 
       <a href=".">
-        <div class="image-wrapper">
-          <img src="./assets/images/logo-white_v2.png" alt="White logo André Ferraz">
-        </div>
+        <span class="logo">&#60;André Ferraz /&#62;</span>
       </a>
 
-      <button class="menu" onclick="toggleMenu()">
-        <i id="menu-mobile-icon" class="fas fa-bars"></i>
+      <nav class="navbar">
+        <!-- <i id="menu-mobile-icon" class="fas fa-bars"></i> -->
 
-        <div id="links" class="mobile-links">
-          <a href="#about-section">About</a>
-          <a href="#projects">Work</a>
-          <a href="#contact">Contact</a>
-          <a href="/andre-ferraz-cv.pdf" target="_blank">Curriculum</a>
-        </div>
-      </button>
+        <a class="nav-link" href="#me">Me</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="/resume-en.pdf" target="_blank">
+          Curriculum &nbsp;
+          <i style="font-size: 0.8rem;" class="fas fa-external-link-alt"></i>
+        </a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <section id="welcome-section">
     <div class="wrapper">
-      <div class="image-wrapper">
-        <img src="./assets/images/logo_v2.png" alt="Logo André Ferraz">
-      </div>
-      <h1>Hey I am André</h1>
-      <p>a web developer</p>
+      <h1>Hey I'm André</h1>
+      <p>&#60;software developer /&#62;</p>
     </div>
   </section>
 
-  <section id="about-section">
+  <section id="me" class="me">
     <div class="content about-content">
-      <h2 class="section-title">About Me!</h2>
-      <p>Brazilian, graduated in systems development and passionate about learning new technologies. A few years ago I
-        became interested in computer science and since then I have focused on my learning path. Currently, I work as a
-        web developer at Grupo Ciatos. I love video games, chess, movies and soccer. I hope to have good experiences
-        in my career as a software developer.
+      <h2 class="section-title">About Me</h2>
+      <p>Brazilian 🇧🇷, graduated in systems development and passionate about 
+        learning new technologies. Some of my interests are computer science 🖥️, 
+        chess ♟️, animes 🉐, video-games 🕹️ and soccer ⚽. I enjoy playing soccer 
+        on weekends, playing chess online and playing video games when I 
+        have time. I'm currently working as a Full-Stack Developer and I 
+        love it. 
       </p>
     </div>
   </section>
 
-  <section id="projects">
-    <h2 class="section-title">These are some of my projects</h2>
-    <div class="content projects-content">
+  <section id="projects" class="projects">
+    <div class="content">
+      <h2 class="section-title">Projects</h2>
+      
+      <div class="item-group">
+        <div class="item">
+          <p class="title">Title</p>
+          <div class="p-links">
+            <a href="#" class="p-link">Source</a>
+            <a href="#" class="p-link">Demo</a>
+          </div>
+          <p class="Description">A simple project example</p>
+          <div class="p-techs">
+            <span class="tech">Java</span>
+            <span class="tech">Angular</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item-group">
+        <div class="item">
+          <p class="title">Title</p>
+          <div class="p-links">
+            <a href="#" class="p-link">Source</a>
+            <a href="#" class="p-link">Demo</a>
+          </div>
+          <p class="Description">A simple project example</p>
+          <div class="p-techs">
+            <span class="tech">Java</span>
+            <span class="tech">Angular</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item-group">
+        <div class="item">
+          <p class="title">Title</p>
+          <div class="p-links">
+            <a href="#" class="p-link">Source</a>
+            <a href="#" class="p-link">Demo</a>
+          </div>
+          <p class="Description">A simple project example</p>
+          <div class="p-techs">
+            <span class="tech">Java</span>
+            <span class="tech">Angular</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item-group">
+        <div class="item">
+          <p class="title">Title</p>
+          <div class="p-links">
+            <a href="#" class="p-link">Source</a>
+            <a href="#" class="p-link">Demo</a>
+          </div>
+          <p class="Description">A simple project example</p>
+          <div class="p-techs">
+            <span class="tech">Java</span>
+            <span class="tech">Angular</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item-group">
+        <div class="item">
+          <p class="title">Title</p>
+          <div class="p-links">
+            <a href="#" class="p-link">Source</a>
+            <a href="#" class="p-link">Demo</a>
+          </div>
+          <p class="Description">A simple project example</p>
+          <div class="p-techs">
+            <span class="tech">Java</span>
+            <span class="tech">Angular</span>
+          </div>
+        </div>
+      </div>
 
-      <!-- Personal page -->
-      <div class="project-tile">
-        <div class="project-image"></div>
+
+      <!-- <div class="project-tile">
+        <div class="project-image">
+          <img src="../assets/images/project1.jpg" alt="">
+        </div>
         <div class="project-info">
           <div class="numbers">
             <span>1</span>
@@ -80,7 +155,7 @@
         </div>
       </div>
 
-      <!-- E-commerce app -->
+      
       <div class="project-tile">
         <div class="project-image" style="background: url(./assets/images/ecommerce-app.jpeg);
                                           background-position: top;
@@ -98,7 +173,7 @@
         </div>
       </div>
 
-      <!-- Films app -->
+
       <div class="project-tile">
         <div class="project-image" style="background: url(./assets/images/films-app.jpeg);
                                           background-position: top;
@@ -116,7 +191,7 @@
         </div>
       </div>
 
-      <!-- Caculator -->
+
       <div class="project-tile">
         <div class="project-image" style="background: url(./assets/images/calculator.jpeg);
                                           background-position-y: bottom -150px;
@@ -134,7 +209,7 @@
         </div>
       </div>
 
-      <!-- Be the hero -->
+
       <div class="project-tile">
         <div class="project-image" style="background: url(./assets/images/bethehero.png);
                                           background-position-y: top -1px;
@@ -152,7 +227,7 @@
         </div>
       </div>
 
-      <!-- Doe sangue -->
+      
       <div class="project-tile">
         <div class="project-image" style="background: url(./assets/images/doesangue.png);
                                           background-position-y: top -1px;
@@ -169,14 +244,14 @@
           </div>
           <pre><span class="brackets">{</span><br>  <span class="key">name</span>: '<span class="string">Doe Sangue</span>',<br>  <span class="key">lang</span>: '<span class="string">HTML CSS JS</span>',<br>  <span class="key">source</span>: '<a class="link" href="https://github.com/andreferrazz/doe-sangue" target="_blank">github</a>'<br><span class="brackets">}</span></pre>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </section>
 
   <section id="contact">
-    <h2 class="section-title">Contact me</h2>
     <div class="content contact-content">
+      <h2 class="section-title">Contact me</h2>
       <p class="contact-info">andreferraz25384@gmail.com &nbsp;&nbsp;|&nbsp;&nbsp; +55 31 98529-1945</p>
 
       <div class="social">
@@ -198,8 +273,6 @@
     </footer>
   </section>
 
-
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
