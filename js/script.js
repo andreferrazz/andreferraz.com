@@ -4,6 +4,7 @@ const navLinks = document.querySelectorAll('.nav-link')
 
 function setHeaderDark() {
   header.style.backgroundColor = '#272727'
+  header.style.boxShadow = 'unset'
   logo.style.color = 'white'
   navLinks.forEach(navLink => navLink.style.color = 'white')
 }
