@@ -10,6 +10,7 @@ function setHeaderDark() {
 
 function setHeaderLight() {
   header.style.backgroundColor = 'white'
+  header.style.boxShadow = '0 1px 2px 2px #00000011'
   logo.style.color = '#272727'
   navLinks.forEach(navLink => navLink.style.color = '#272727')
 }
