@@ -6,7 +6,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'accent': '#427b58',
+				'accent': '#d65d0e',
 
 				// Gruvbox Palette (https://github.com/morhetz/gruvbox?tab=readme-ov-file#palette)
 				'gruvbox-bg0-hard1': '#f9f5d7',
