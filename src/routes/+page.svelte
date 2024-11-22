@@ -83,7 +83,7 @@
 <section class="py-[50px]">
 	<div class="mb-8 flex items-center justify-center gap-2">
 		<img src="code.svg" alt="GUI Terminal" class="w-[30px]" />
-		<div class="text-xl font-semibold">André Ferraz</div>
+		<div class="text-xl font-medium">André Ferraz</div>
 	</div>
 	<div class="flex justify-center gap-4">
 		<LinkButton text="LinkedIn" href="https://www.linkedin.com/in/andre-rodrigues-ferraz" image="/linkedin-alt.svg" target="_blank" />
