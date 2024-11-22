@@ -47,7 +47,16 @@ export default {
 				'gruvbox-aqua-light': '#8ec07c',
 			},
 			fontFamily: {
-				'display': ['Inter', 'Arial', 'sans-serif']
+				'display': ['Cocogoose', 'Inter', 'Arial', 'sans-serif']
+			},
+			fontWeight: {
+				'block-border': '101',
+				'block-gradient': '102',
+				'block-innerline': '103',
+				'block-block-shadow-black': '104',
+				'block-inline': '105',
+				'block-letterpress': '106',
+				'block-outlined': '107',
 			}
 		}
 	},
