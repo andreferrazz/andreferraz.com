@@ -1,10 +1,12 @@
 <script lang="ts">
+	import NavLink from '$lib/components/nav-link.svelte';
 	import '../app.css';
+
 	let { children } = $props();
 </script>
 
-<div class="bg-gruvbox-bg0 text-gruvbox-fg0 min-h-screen font-display">
-	<div class="border-gruvbox-bg1 bg-gruvbox-bg0 fixed h-[50px] w-full border-b border-solid">
+<div class="min-h-screen bg-gruvbox-bg0 font-display text-gruvbox-fg0">
+	<div class="fixed h-[50px] w-full border-b border-solid border-gruvbox-bg1 bg-gruvbox-bg0">
 		<div class="container mx-auto flex h-[50px] max-w-4xl items-center justify-between px-4">
 			<a href="/" class="flex items-center gap-2">
 				<img src="code.svg" alt="GUI Terminal" class="w-[30px]" />
@@ -12,9 +14,9 @@
 			</a>
 
 			<div>
-				<a class="border-gruvbox-bg1 active:bg-gruvbox-bg0-hard1 mx-1 rounded-xl border-solid px-2 py-2 text-sm font-normal active:border sm:px-4" href="/fonts">Articles</a>
-				<a class="border-gruvbox-bg1 active:bg-gruvbox-bg0-hard1 mx-1 rounded-xl border-solid px-2 py-2 text-sm font-normal active:border sm:px-4" href="/projects">Projects</a>
-				<a class="border-gruvbox-bg1 active:bg-gruvbox-bg0-hard1 mx-1 rounded-xl border-solid px-2 py-2 text-sm font-normal active:border sm:px-4" href="/about">About Me</a>
+				<NavLink href="/fonts" text="Articles" />
+				<NavLink href="/projects" text="Projects" />
+				<NavLink href="/about" text="About Me" />
 			</div>
 		</div>
 	</div>
