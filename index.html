@@ -431,7 +431,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 						</header>
 						<div class="content">
 							<p><strong>Let's chat</strong>—whether it's about work, tech, or just geeking out over great ideas.</p>
-							<form>
+							<form id="get_in_touch">
 								<div class="fields">
 									<div class="field half">
 										<input type="text" name="name" id="name" placeholder="Name" />
@@ -444,7 +444,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
+									<li><input id="form_button" type="submit" value="Send Message" class="button primary"/></li>
 								</ul>
 							</form>
 						</div>
@@ -489,6 +489,29 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				const formButtom = document.getElementById('form_button');
+				const form = document.getElementById('get_in_touch');
+				
+				form.addEventListener("submit", async (event) => {
+					event.preventDefault();
+					formButtom.disabled = true;
+					const response = await fetch('https://mail-service-cs06.onrender.com/email', { 
+						method: 'POST',
+						headers: { 'Content-Type': 'application/json' },
+						body: JSON.stringify({
+							senderName: event.target.name.value,
+							senderEmailAddress: event.target.email.value,
+							text: event.target.message.value
+						})
+					});
+					const jsonResponse = await response.json();
+					event.target.name.value = '';
+					event.target.email.value = '';
+					event.target.message.value = '';
+					formButtom.disabled = false;
+				});
+			</script>
 
 	</body>
 </html>
