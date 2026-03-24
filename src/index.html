@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>André Ferraz — Software Engineer</title>
+  <meta name="description" content="Experienced Software Engineer helping startups reach their full potential through scalable, reliable software." />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/cbae22f8dd.js" crossorigin="anonymous"></script>
+
+  <!-- Tailwind -->
+  <link rel="stylesheet" href="output.css" />
+</head>
+<body class="antialiased">
+
+  <!-- Language toggle -->
+  <button id="lang-toggle" class="fixed top-4 right-4 z-50 bg-card-bg text-gray-300 text-sm font-semibold px-3 py-2 rounded-lg border border-gray-700 hover:border-accent/50 hover:text-white transition cursor-pointer">
+    PT
+  </button>
+
+  <!-- Hero -->
+  <section id="hero" class="min-h-screen flex items-center bg-dark-bg">
+    <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div class="text-center md:text-left">
+        <h1 class="text-5xl md:text-6xl leading-tight mb-4">André Ferraz</h1>
+        <p data-i18n="hero.tagline" class="text-xl md:text-2xl text-gray-300 mb-8 font-light">Helping startups reach their full potential through reliable, scalable software.</p>
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+          <a href="#projects" data-i18n="hero.cta1" class="inline-block bg-accent text-darker-bg font-semibold px-6 py-3 rounded-lg hover:bg-accent-dark transition">See My Work</a>
+          <a href="#contact" data-i18n="hero.cta2" class="inline-block border border-accent text-accent font-semibold px-6 py-3 rounded-lg hover:bg-accent/10 transition">Get in Touch</a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img src="images/andre.png" alt="André Ferraz" class="w-72 md:w-96 aspect-square object-cover rounded-full shadow-2xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-darker-bg py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 data-i18n="about.title" class="text-3xl md:text-4xl mb-6">What I Bring to the Table</h2>
+      <p data-i18n="about.text" class="text-lg text-gray-300 font-light leading-relaxed">
+        Results-oriented Software Engineer with a passion for crafting innovative solutions. I specialize in designing, developing, and deploying high-performance microservices and full-stack applications. Whether you need to ship fast or scale smart, I leverage cloud technologies and agile methodologies to deliver impactful results.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-dark-bg py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 data-i18n="skills.title" class="text-3xl md:text-4xl mb-4">Bringing Ideas to Life</h2>
+      <p data-i18n="skills.subtitle" class="text-gray-300 font-light mb-12">I help teams build scalable, reliable software—from backend architecture to full-stack solutions. Here's how I can add value to your next project:</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-card-bg rounded-xl p-6 hover:ring-1 hover:ring-accent/30 transition">
+          <i class="fa-solid fa-layer-group text-accent text-2xl mb-4"></i>
+          <h3 data-i18n="skills.fullstack" class="text-lg mb-1">Full-Stack Web Development</h3>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-6 hover:ring-1 hover:ring-accent/30 transition">
+          <i class="fa-solid fa-server text-accent text-2xl mb-4"></i>
+          <h3 data-i18n="skills.backend" class="text-lg mb-1">Backend Development</h3>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-6 hover:ring-1 hover:ring-accent/30 transition">
+          <i class="fa-solid fa-plug text-accent text-2xl mb-4"></i>
+          <h3 data-i18n="skills.api" class="text-lg mb-1">API Design & Integration</h3>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-6 hover:ring-1 hover:ring-accent/30 transition">
+          <i class="fa-solid fa-code text-accent text-2xl mb-4"></i>
+          <h3 data-i18n="skills.performance" class="text-lg mb-1">Performance Optimization</h3>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-6 hover:ring-1 hover:ring-accent/30 transition">
+          <i class="fa-solid fa-file-contract text-accent text-2xl mb-4"></i>
+          <h3 data-i18n="skills.writing" class="text-lg mb-1">Technical Writing & Documentation</h3>
+        </div>
+
+        <div class="bg-card-bg rounded-xl p-6 hover:ring-1 hover:ring-accent/30 transition">
+          <i class="fa-solid fa-hands-helping text-accent text-2xl mb-4"></i>
+          <h3 data-i18n="skills.mentoring" class="text-lg mb-1">Mentoring & Training</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-darker-bg py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 data-i18n="projects.title" class="text-3xl md:text-4xl mb-4">What I've Built</h2>
+      <p data-i18n="projects.subtitle" class="text-gray-300 font-light mb-12">A look at the products, platforms, and problems I've tackled through code.</p>
+
+      <!-- Project 1 -->
+      <div class="mb-16">
+        <h3 data-i18n="projects.p1.name" class="text-2xl mb-3">Project Name</h3>
+        <p data-i18n="projects.p1.desc" class="text-gray-300 font-light mb-6 max-w-3xl">
+          Brief description of the project. What problem it solves, who it's for, and what makes it interesting.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="col-span-2 rounded-lg bg-card-bg aspect-video flex items-center justify-center text-gray-500">Screenshot</div>
+          <div class="rounded-lg bg-card-bg aspect-video flex items-center justify-center text-gray-500">Screenshot</div>
+          <div class="rounded-lg bg-card-bg aspect-video flex items-center justify-center text-gray-500">Screenshot</div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="mb-16">
+        <h3 data-i18n="projects.p2.name" class="text-2xl mb-3">Project Name</h3>
+        <p data-i18n="projects.p2.desc" class="text-gray-300 font-light mb-6 max-w-3xl">
+          Brief description of the project. What problem it solves, who it's for, and what makes it interesting.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="col-span-2 rounded-lg bg-card-bg aspect-video flex items-center justify-center text-gray-500">Screenshot</div>
+          <div class="rounded-lg bg-card-bg aspect-video flex items-center justify-center text-gray-500">Screenshot</div>
+          <div class="rounded-lg bg-card-bg aspect-video flex items-center justify-center text-gray-500">Screenshot</div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div>
+        <h3 data-i18n="projects.p3.name" class="text-2xl mb-3">Project Name</h3>
+        <p data-i18n="projects.p3.desc" class="text-gray-300 font-light mb-6 max-w-3xl">
+          Brief description of the project. What problem it solves, who it's for, and what makes it interesting.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="col-span-2 rounded-lg bg-card-bg aspect-video flex items-center justify-center text-gray-500">Screenshot</div>
+          <div class="rounded-lg bg-card-bg aspect-video flex items-center justify-center text-gray-500">Screenshot</div>
+          <div class="rounded-lg bg-card-bg aspect-video flex items-center justify-center text-gray-500">Screenshot</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-dark-bg py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 data-i18n="contact.title" class="text-3xl md:text-4xl mb-4">Get in Touch</h2>
+      <p data-i18n="contact.subtitle" class="text-gray-300 font-light mb-12">Let's chat—whether it's about work, tech, or just geeking out over great ideas.</p>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Form -->
+        <form id="contact-form" class="space-y-6">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="name" data-i18n="contact.name" class="block text-sm text-gray-400 mb-1">Name</label>
+              <input type="text" id="name" name="name" required
+                class="w-full bg-darker-bg border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accent/50" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm text-gray-400 mb-1">Email</label>
+              <input type="email" id="email" name="email" required
+                class="w-full bg-darker-bg border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accent/50" />
+            </div>
+          </div>
+          <div>
+            <label for="message" data-i18n="contact.message" class="block text-sm text-gray-400 mb-1">Message</label>
+            <textarea id="message" name="message" rows="6" required
+              class="w-full bg-darker-bg border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accent/50"></textarea>
+          </div>
+          <button id="form-button" type="submit" data-i18n="contact.send"
+            class="bg-accent text-darker-bg font-semibold px-8 py-3 rounded-lg hover:bg-accent-dark transition disabled:opacity-50 disabled:cursor-not-allowed">
+            Send Message
+          </button>
+        </form>
+
+        <!-- Contact details -->
+        <div class="space-y-6 text-gray-300">
+          <div>
+            <h3 class="text-lg text-white mb-1">Email</h3>
+            <a href="mailto:oandreferraz@gmail.com" class="text-accent hover:underline">oandreferraz@gmail.com</a>
+          </div>
+          <div>
+            <h3 data-i18n="contact.phone" class="text-lg text-white mb-1">Phone</h3>
+            <a href="tel:+5531997102160" class="text-accent hover:underline">+55 (31) 99710-2160</a>
+          </div>
+          <div>
+            <h3 data-i18n="contact.elsewhere" class="text-lg text-white mb-1">Elsewhere</h3>
+            <div class="flex gap-4 text-2xl">
+              <a href="https://www.linkedin.com/in/oandreferraz" target="_blank" class="text-gray-400 hover:text-accent transition" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/andreferrazz" target="_blank" class="text-gray-400 hover:text-accent transition" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-darker-bg py-8 text-center text-gray-500 text-sm">
+    <p data-i18n="footer.copy">&copy; André Ferraz. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // --- i18n ---
+    const translations = {
+      en: {
+        'hero.tagline': 'Helping startups reach their full potential through reliable, scalable software.',
+        'hero.cta1': 'See My Work',
+        'hero.cta2': 'Get in Touch',
+        'about.title': 'What I Bring to the Table',
+        'about.text': 'Results-oriented Software Engineer with a passion for crafting innovative solutions. I specialize in designing, developing, and deploying high-performance backend services and full-stack applications. Whether you need to ship fast or scale smart, I leverage cloud technologies and agile methodologies to deliver impactful results.',
+        'skills.title': 'Bringing Ideas to Life',
+        'skills.subtitle': "I help teams build scalable, reliable software\u2014from backend architecture to full-stack solutions. Here\u2019s how I can add value to your next project:",
+        'skills.fullstack': 'Full-Stack Web Development',
+        'skills.backend': 'Backend Development',
+        'skills.api': 'API Design & Integration',
+        'skills.performance': 'Performance Optimization',
+        'skills.writing': 'Technical Writing & Documentation',
+        'skills.mentoring': 'Mentoring & Training',
+        'projects.title': "What I\u2019ve Built",
+        'projects.subtitle': "A look at the products, platforms, and problems I\u2019ve tackled through code.",
+        'projects.p1.name': 'Project Name',
+        'projects.p1.desc': "Brief description of the project. What problem it solves, who it\u2019s for, and what makes it interesting.",
+        'projects.p2.name': 'Project Name',
+        'projects.p2.desc': "Brief description of the project. What problem it solves, who it\u2019s for, and what makes it interesting.",
+        'projects.p3.name': 'Project Name',
+        'projects.p3.desc': "Brief description of the project. What problem it solves, who it\u2019s for, and what makes it interesting.",
+        'contact.title': 'Get in Touch',
+        'contact.subtitle': "Let\u2019s chat\u2014whether it\u2019s about work, tech, or just geeking out over great ideas.",
+        'contact.name': 'Name',
+        'contact.message': 'Message',
+        'contact.send': 'Send Message',
+        'contact.phone': 'Phone',
+        'contact.elsewhere': 'Elsewhere',
+        'footer.copy': '\u00a9 André Ferraz. All rights reserved.',
+      },
+      pt: {
+        'hero.tagline': 'Ajudando startups a alcançar seu potencial máximo com software confiável e escalável.',
+        'hero.cta1': 'Ver Meu Trabalho',
+        'hero.cta2': 'Entre em Contato',
+        'about.title': 'O Que Eu Trago para a Mesa',
+        'about.text': 'Engenheiro de Software orientado a resultados, com paixão por criar soluções inovadoras. Sou especialista em projetar, desenvolver e implantar serviços backend de alta performance e aplicações full-stack. Seja para lançar rápido ou escalar com inteligência, utilizo tecnologias em nuvem e metodologias ágeis para entregar resultados de impacto.',
+        'skills.title': 'Transformando Ideias em Realidade',
+        'skills.subtitle': 'Ajudo equipes a construir software escalável e confiável\u2014da arquitetura backend a soluções full-stack. Veja como posso agregar valor ao seu próximo projeto:',
+        'skills.fullstack': 'Desenvolvimento Web Full-Stack',
+        'skills.backend': 'Desenvolvimento Backend',
+        'skills.api': 'Design & Integração de APIs',
+        'skills.performance': 'Otimização de Performance',
+        'skills.writing': 'Escrita Técnica & Documentação',
+        'skills.mentoring': 'Mentoria & Treinamento',
+        'projects.title': 'O Que Eu Construí',
+        'projects.subtitle': 'Um olhar sobre os produtos, plataformas e problemas que enfrentei através de código.',
+        'projects.p1.name': 'Nome do Projeto',
+        'projects.p1.desc': 'Breve descrição do projeto. Qual problema ele resolve, para quem é e o que o torna interessante.',
+        'projects.p2.name': 'Nome do Projeto',
+        'projects.p2.desc': 'Breve descrição do projeto. Qual problema ele resolve, para quem é e o que o torna interessante.',
+        'projects.p3.name': 'Nome do Projeto',
+        'projects.p3.desc': 'Breve descrição do projeto. Qual problema ele resolve, para quem é e o que o torna interessante.',
+        'contact.title': 'Entre em Contato',
+        'contact.subtitle': 'Vamos conversar\u2014seja sobre trabalho, tecnologia ou apenas trocar ideias sobre coisas legais.',
+        'contact.name': 'Nome',
+        'contact.message': 'Mensagem',
+        'contact.send': 'Enviar Mensagem',
+        'contact.phone': 'Telefone',
+        'contact.elsewhere': 'Redes Sociais',
+        'footer.copy': '\u00a9 André Ferraz. Todos os direitos reservados.',
+      }
+    };
+
+    let currentLang = localStorage.getItem('lang') || 'en';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('lang', lang);
+      document.documentElement.lang = lang;
+      document.getElementById('lang-toggle').textContent = lang === 'en' ? 'PT' : 'EN';
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+    }
+
+    document.getElementById('lang-toggle').addEventListener('click', () => {
+      setLanguage(currentLang === 'en' ? 'pt' : 'en');
+    });
+
+    // Apply saved language on load
+    if (currentLang !== 'en') {
+      setLanguage(currentLang);
+    }
+
+    // --- Contact form ---
+    const form = document.getElementById('contact-form');
+    const formButton = document.getElementById('form-button');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      formButton.disabled = true;
+
+      try {
+        await fetch('https://mail-service-cs06.onrender.com/email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            senderName: event.target.name.value,
+            senderEmailAddress: event.target.email.value,
+            text: event.target.message.value
+          })
+        });
+        form.reset();
+      } catch (e) {
+        console.error('Failed to send message:', e);
+      }
+
+      formButton.disabled = false;
+    });
+  </script>
+
+</body>
+</html>

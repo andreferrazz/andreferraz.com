@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #49fcd4;
+  --color-accent-dark: #3adbc0;
+  --color-dark-bg: #1a1a2e;
+  --color-darker-bg: #0f0f1a;
+  --color-card-bg: #16213e;
+  --font-heading: "Raleway", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+    color: #e0e0e0;
+  }
+
+  body {
+    background-color: var(--color-darker-bg);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    color: #ffffff;
+  }
+}
