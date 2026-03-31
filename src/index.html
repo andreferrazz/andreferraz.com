@@ -167,7 +167,7 @@
 
       <div class="grid md:grid-cols-2 gap-12">
         <!-- Form -->
-        <form id="contact-form" class="space-y-6">
+        <form id="contact-form" action="https://mail-service.andreferraz.com/email" method="POST" class="space-y-6">
           <div class="grid sm:grid-cols-2 gap-6">
             <div>
               <label for="name" data-i18n="contact.name" class="block text-sm text-gray-400 mb-1">Name</label>
@@ -189,6 +189,8 @@
             class="bg-accent text-darker-bg font-semibold px-8 py-3 rounded-lg hover:bg-accent-dark transition disabled:opacity-50 disabled:cursor-not-allowed">
             Send Message
           </button>
+          <p id="form-success" data-i18n="contact.success" class="hidden text-accent font-light">Your message was sent! I'll get back to you soon.</p>
+          <p id="form-error" data-i18n="contact.error" class="hidden text-red-400 font-light">Something went wrong. Please try again or email me directly.</p>
         </form>
 
         <!-- Contact details -->
@@ -254,6 +256,8 @@
         'contact.send': 'Send Message',
         'contact.phone': 'Phone',
         'contact.elsewhere': 'Elsewhere',
+        'contact.success': "Your message was sent! I\u2019ll get back to you soon.",
+        'contact.error': 'Something went wrong. Please try again or email me directly.',
         'footer.copy': '\u00a9 André Ferraz. All rights reserved.',
       },
       pt: {
@@ -285,6 +289,8 @@
         'contact.send': 'Enviar Mensagem',
         'contact.phone': 'Telefone',
         'contact.elsewhere': 'Redes Sociais',
+        'contact.success': 'Sua mensagem foi enviada! Entrarei em contato em breve.',
+        'contact.error': 'Algo deu errado. Tente novamente ou envie um e-mail diretamente.',
         'footer.copy': '\u00a9 André Ferraz. Todos os direitos reservados.',
       }
     };
@@ -316,28 +322,41 @@
 
     // --- Contact form ---
     const form = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+    const formError = document.getElementById('form-error');
     const formButton = document.getElementById('form-button');
 
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
+    // No-JS fallback: check for ?error=true on page load (backend redirect)
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('error') === 'true') {
+      formError.classList.remove('hidden');
+      form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      history.replaceState(null, '', window.location.pathname + window.location.hash);
+    }
+
+    // JS-enhanced submit via fetch
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      formSuccess.classList.add('hidden');
+      formError.classList.add('hidden');
       formButton.disabled = true;
 
-      try {
-        await fetch('https://mail-service.andreferraz.com/email', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            senderName: event.target.name.value,
-            senderEmailAddress: event.target.email.value,
-            text: event.target.message.value
-          })
+      fetch(form.action, {
+        method: 'POST',
+        headers: { accept: 'application/json' },
+        body: new FormData(form),
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error(res.status);
+          formSuccess.classList.remove('hidden');
+          form.reset();
+        })
+        .catch(function (err) {
+          formError.classList.remove('hidden');
+        })
+        .finally(function () {
+          formButton.disabled = false;
         });
-        form.reset();
-      } catch (e) {
-        console.error('Failed to send message:', e);
-      }
-
-      formButton.disabled = false;
     });
   </script>
 
