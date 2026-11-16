@@ -3,347 +3,128 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>André Ferraz — Software Engineer</title>
-  <meta name="description" content="Experienced Software Engineer helping startups reach their full potential through scalable, reliable software." />
+  <title>André Ferraz</title>
+  <meta name="description" content="André Ferraz's personal site. Being replanted. Come back in a while." />
 
-  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
 
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/cbae22f8dd.js" crossorigin="anonymous"></script>
-
-  <!-- Tailwind -->
-  <link rel="stylesheet" href="output.css" />
-</head>
-<body class="antialiased">
-
-  <!-- Language toggle -->
-  <button id="lang-toggle" class="fixed top-4 right-4 z-50 bg-card-bg text-gray-300 text-sm font-semibold px-3 py-2 rounded-lg border border-gray-700 hover:border-accent/50 hover:text-white transition cursor-pointer">
-    PT
-  </button>
-
-  <!-- Hero -->
-  <section id="hero" class="min-h-screen flex items-center bg-dark-bg">
-    <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
-      <div class="text-center md:text-left">
-        <h1 data-i18n="hero.headline" class="text-5xl md:text-6xl leading-tight mb-4">From concept to software in as little as 7 days</h1>
-        <p data-i18n="hero.tagline" class="text-xl md:text-2xl text-gray-300 mb-8 font-light">I'm André Ferraz, and I help businesses launch products fast, with clear technical direction and a strong foundation for long-term growth.</p>
-        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-          <a href="#contact" data-i18n="hero.cta" class="inline-block bg-accent text-darker-bg font-semibold px-6 py-3 rounded-lg hover:bg-accent-dark transition">Book a free discovery call</a>
-        </div>
-      </div>
-      <div class="flex justify-center">
-        <img src="images/andre.jpg" alt="André Ferraz" class="w-72 md:w-96 aspect-square object-cover shadow-2xl" style="border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Value Proposition -->
-  <section id="value-prop" class="bg-darker-bg py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 data-i18n="value.title" class="text-3xl md:text-4xl mb-4">How I can help</h2>
-      <p data-i18n="value.subtitle" class="text-gray-300 font-light mb-12">You don't need a full team. You need the right person.</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-        <div class="bg-card-bg rounded-xl p-8 hover:ring-1 hover:ring-accent/30 transition">
-          <i class="fa-solid fa-rocket text-accent text-2xl mb-5"></i>
-          <h3 data-i18n="value.v1.title" class="text-xl mb-3">You need to ship, but your team can't keep up</h3>
-          <p data-i18n="value.v1.desc" class="text-gray-300 font-light leading-relaxed">You don't need to grow the team — you need a senior engineer who executes fast, makes sound technical decisions, and delivers working software autonomously.</p>
-        </div>
-
-        <div class="bg-card-bg rounded-xl p-8 hover:ring-1 hover:ring-accent/30 transition">
-          <i class="fa-solid fa-compass text-accent text-2xl mb-5"></i>
-          <h3 data-i18n="value.v2.title" class="text-xl mb-3">You're not sure what to build first</h3>
-          <p data-i18n="value.v2.desc" class="text-gray-300 font-light leading-relaxed">I help you cut through the noise, prioritize what actually moves the needle, and get to working software fast — without wasted sprints or scope creep.</p>
-        </div>
-
-        <div class="bg-card-bg rounded-xl p-8 hover:ring-1 hover:ring-accent/30 transition">
-          <i class="fa-solid fa-handshake text-accent text-2xl mb-5"></i>
-          <h3 data-i18n="value.v3.title" class="text-xl mb-3">You've been burned by bad vendors before</h3>
-          <p data-i18n="value.v3.desc" class="text-gray-300 font-light leading-relaxed">Clear communication, honest timelines, and code you won't regret. Whether your codebase is a mess or you're starting fresh, I bring senior execution you can trust.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Proof of Value -->
-  <section id="proof" class="bg-dark-bg py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 data-i18n="proof.title" class="text-3xl md:text-4xl mb-4">How I Work</h2>
-      <p data-i18n="proof.subtitle" class="text-gray-300 font-light mb-16">No surprises, no hand-waving. Here's exactly what working with me looks like.</p>
-
-      <!-- Process Steps -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-20">
-        <div class="text-center md:text-left">
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent text-darker-bg font-bold mb-4">1</span>
-          <h3 data-i18n="proof.step1.title" class="text-lg mb-2">Discovery Call</h3>
-          <p data-i18n="proof.step1.desc" class="text-gray-300 font-light text-sm leading-relaxed">We talk about your goals, your timeline, and what's blocking you. Free, no commitment — just clarity.</p>
-        </div>
-        <div class="text-center md:text-left">
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent text-darker-bg font-bold mb-4">2</span>
-          <h3 data-i18n="proof.step2.title" class="text-lg mb-2">Scope & Proposal</h3>
-          <p data-i18n="proof.step2.desc" class="text-gray-300 font-light text-sm leading-relaxed">Within 48 hours you get a clear proposal: what I'll build, how long it takes, and what it costs. No vague estimates.</p>
-        </div>
-        <div class="text-center md:text-left">
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent text-darker-bg font-bold mb-4">3</span>
-          <h3 data-i18n="proof.step3.title" class="text-lg mb-2">Build in the Open</h3>
-          <p data-i18n="proof.step3.desc" class="text-gray-300 font-light text-sm leading-relaxed">Weekly demos of working software. You see real progress, give feedback early, and never wonder what's happening.</p>
-        </div>
-        <div class="text-center md:text-left">
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-accent text-darker-bg font-bold mb-4">4</span>
-          <h3 data-i18n="proof.step4.title" class="text-lg mb-2">Deliver & Hand Off</h3>
-          <p data-i18n="proof.step4.desc" class="text-gray-300 font-light text-sm leading-relaxed">You get production-ready code, documentation, and a walkthrough. Everything is yours — no lock-in, no dependency on me.</p>
-        </div>
-      </div>
-
-      <!-- Commitments -->
-      <h3 data-i18n="proof.commitments.title" class="text-2xl md:text-3xl mb-4">My Commitments to You</h3>
-      <p data-i18n="proof.commitments.subtitle" class="text-gray-300 font-light mb-12">Promises I make on every engagement — no exceptions.</p>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-card-bg rounded-xl p-8 hover:ring-1 hover:ring-accent/30 transition">
-          <i class="fa-solid fa-bolt text-accent text-2xl mb-5"></i>
-          <h4 data-i18n="proof.c1.title" class="text-xl mb-3">Working software every week</h4>
-          <p data-i18n="proof.c1.desc" class="text-gray-300 font-light leading-relaxed">You'll never wait months for a "big reveal." Every week, you see a live demo of what's been built — and you steer what comes next.</p>
-        </div>
-        <div class="bg-card-bg rounded-xl p-8 hover:ring-1 hover:ring-accent/30 transition">
-          <i class="fa-solid fa-shield-halved text-accent text-2xl mb-5"></i>
-          <h4 data-i18n="proof.c2.title" class="text-xl mb-3">You own everything</h4>
-          <p data-i18n="proof.c2.desc" class="text-gray-300 font-light leading-relaxed">Every line of code, every design asset, every deployment script. Full IP ownership from day one. If we part ways, you walk away with everything.</p>
-        </div>
-        <div class="bg-card-bg rounded-xl p-8 hover:ring-1 hover:ring-accent/30 transition">
-          <i class="fa-solid fa-comments text-accent text-2xl mb-5"></i>
-          <h4 data-i18n="proof.c3.title" class="text-xl mb-3">Honest communication, always</h4>
-          <p data-i18n="proof.c3.desc" class="text-gray-300 font-light leading-relaxed">If something is going to take longer, you'll know before it's late — not after. I'd rather give you a hard truth early than a pleasant surprise that never ships.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="bg-dark-bg py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 data-i18n="contact.title" class="text-3xl md:text-4xl mb-4">Let's talk?</h2>
-      <p data-i18n="contact.subtitle" class="text-gray-300 font-light mb-12">Tell me about your project. I'll respond within 24 hours.</p>
-
-      <div class="grid md:grid-cols-2 gap-12">
-        <!-- Form -->
-        <form id="contact-form" action="https://mail-service.andreferraz.com/email" method="POST" class="space-y-6">
-          <div class="grid sm:grid-cols-2 gap-6">
-            <div>
-              <label for="name" data-i18n="contact.name" class="block text-sm text-gray-400 mb-1">Name</label>
-              <input type="text" id="name" name="name" required
-                class="w-full bg-darker-bg border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accent/50" />
-            </div>
-            <div>
-              <label for="email" class="block text-sm text-gray-400 mb-1">Email</label>
-              <input type="email" id="email" name="email" required
-                class="w-full bg-darker-bg border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accent/50" />
-            </div>
-          </div>
-          <div>
-            <label for="message" data-i18n="contact.message" class="block text-sm text-gray-400 mb-1">About your project</label>
-            <textarea id="message" name="message" rows="6" required
-              class="w-full bg-darker-bg border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accent/50"></textarea>
-          </div>
-          <button id="form-button" type="submit" data-i18n="contact.send"
-            class="bg-accent text-darker-bg font-semibold px-8 py-3 rounded-lg hover:bg-accent-dark transition disabled:opacity-50 disabled:cursor-not-allowed">
-            Send Message
-          </button>
-          <p id="form-success" data-i18n="contact.success" class="hidden text-accent font-light">Your message was sent! I'll get back to you soon.</p>
-          <p id="form-error" data-i18n="contact.error" class="hidden text-red-400 font-light">Something went wrong. Please try again or email me directly.</p>
-        </form>
-
-        <!-- Contact details -->
-        <div class="space-y-6 text-gray-300">
-          <div>
-            <h3 class="text-lg text-white mb-1">Email</h3>
-            <a href="mailto:oandreferraz@gmail.com" class="text-accent hover:underline">oandreferraz@gmail.com</a>
-          </div>
-          <div>
-            <h3 data-i18n="contact.phone" class="text-lg text-white mb-1">Phone</h3>
-            <a href="tel:+5531997102160" class="text-accent hover:underline">+55 (31) 99710-2160</a>
-          </div>
-          <div>
-            <h3 data-i18n="contact.elsewhere" class="text-lg text-white mb-1">Elsewhere</h3>
-            <div class="flex gap-4 text-2xl">
-              <a href="https://www.linkedin.com/in/oandreferraz" target="_blank" class="text-gray-400 hover:text-accent transition" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a href="https://github.com/andreferrazz" target="_blank" class="text-gray-400 hover:text-accent transition" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-darker-bg py-8 text-center text-gray-500 text-sm">
-    <p data-i18n="footer.copy">&copy; André Ferraz. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // --- i18n ---
-    const translations = {
-      en: {
-        'hero.headline': 'From concept to software in as little as 7 days',
-        'hero.tagline': 'I\'m André Ferraz, and I help businesses launch products fast, with clear technical direction and a strong foundation for long-term growth',
-        'hero.cta': 'Book a free discovery call',
-        'value.title': 'How I can help',
-        'value.subtitle': "You don't need a full team. You need the right person.",
-        'value.v1.title': "You need to ship, but your team can't keep up",
-        'value.v1.desc': "You don't need to grow the team \u2014 you need a senior engineer who executes fast, makes sound technical decisions, and delivers working software autonomously.",
-        'value.v2.title': "You're not sure what to build first",
-        'value.v2.desc': "I help you cut through the noise, prioritize what actually moves the needle, and get to working software fast \u2014 without wasted sprints or scope creep.",
-        'value.v3.title': "You've been burned by bad vendors before",
-        'value.v3.desc': "Clear communication, honest timelines, and code you won't regret. Whether your codebase is a mess or you're starting fresh, I bring senior execution you can trust.",
-        'proof.title': 'How I Work',
-        'proof.subtitle': 'No surprises, no hand-waving. Here\'s exactly what working with me looks like.',
-        'proof.step1.title': 'Discovery Call',
-        'proof.step1.desc': 'We talk about your goals, your timeline, and what\'s blocking you. Free, no commitment \u2014 just clarity.',
-        'proof.step2.title': 'Scope & Proposal',
-        'proof.step2.desc': 'Within 48 hours you get a clear proposal: what I\'ll build, how long it takes, and what it costs. No vague estimates.',
-        'proof.step3.title': 'Build in the Open',
-        'proof.step3.desc': 'Weekly demos of working software. You see real progress, give feedback early, and never wonder what\'s happening.',
-        'proof.step4.title': 'Deliver & Hand Off',
-        'proof.step4.desc': 'You get production-ready code, documentation, and a walkthrough. Everything is yours \u2014 no lock-in, no dependency on me.',
-        'proof.commitments.title': 'My Commitments to You',
-        'proof.commitments.subtitle': 'Promises I make on every engagement \u2014 no exceptions.',
-        'proof.c1.title': 'Working software every week',
-        'proof.c1.desc': 'You\'ll never wait months for a "big reveal." Every week, you see a live demo of what\'s been built \u2014 and you steer what comes next.',
-        'proof.c2.title': 'You own everything',
-        'proof.c2.desc': 'Every line of code, every design asset, every deployment script. Full IP ownership from day one. If we part ways, you walk away with everything.',
-        'proof.c3.title': 'Honest communication, always',
-        'proof.c3.desc': 'If something is going to take longer, you\'ll know before it\'s late \u2014 not after. I\'d rather give you a hard truth early than a pleasant surprise that never ships.',
-        'contact.title': 'Let\'s talk?',
-        'contact.subtitle': 'Tell me about your project. I\'ll respond within 24 hours.',
-        'contact.name': 'Name',
-        'contact.message': 'About your project',
-        'contact.send': 'Send Message',
-        'contact.phone': 'Phone',
-        'contact.elsewhere': 'Elsewhere',
-        'contact.success': "Your message was sent! I\u2019ll get back to you soon.",
-        'contact.error': 'Something went wrong. Please try again or email me directly.',
-        'footer.copy': '\u00a9 André Ferraz. All rights reserved.',
-      },
-      pt: {
-        'hero.headline': 'Do conceito ao software em até 7 dias',
-        'hero.tagline': 'Sou André Ferraz e ajudo negócios a lançar produtos com rapidez, clareza técnica e uma base sustentável no longo prazo',
-        'hero.cta': 'Agendar uma conversa',
-        'value.title': 'Como posso ajudar',
-        'value.subtitle': 'Você não precisa de um time completo. Precisa da pessoa certa.',
-        'value.v1.title': 'Você precisa lançar, mas seu time não consegue acompanhar',
-        'value.v1.desc': 'Você não precisa aumentar o time \u2014 precisa de um engenheiro sênior que executa com velocidade, toma boas decisões técnicas e entrega software funcionando com autonomia.',
-        'value.v2.title': 'Você não sabe o que construir primeiro',
-        'value.v2.desc': 'Ajudo você a cortar o ruído, priorizar o que realmente importa e chegar a um produto funcional rápido \u2014 sem sprints desperdiçadas ou escopo descontrolado.',
-        'value.v3.title': 'Você já se queimou com fornecedores ruins',
-        'value.v3.desc': 'Comunicação clara, prazos honestos e código que você não vai se arrepender. Com o produto bagunçado ou do zero, trago execução sênior em que você pode confiar.',
-        'proof.title': 'Como Eu Trabalho',
-        'proof.subtitle': 'Sem surpresas, sem enrolação. Veja exatamente como é trabalhar comigo.',
-        'proof.step1.title': 'Conversa Inicial',
-        'proof.step1.desc': 'Falamos sobre seus objetivos, prazos e o que está travando. Gratuito, sem compromisso \u2014 só clareza.',
-        'proof.step2.title': 'Escopo & Proposta',
-        'proof.step2.desc': 'Em até 48 horas você recebe uma proposta clara: o que vou construir, quanto tempo leva e quanto custa. Sem estimativas vagas.',
-        'proof.step3.title': 'Construção Transparente',
-        'proof.step3.desc': 'Demos semanais de software funcionando. Você vê progresso real, dá feedback cedo e nunca fica no escuro.',
-        'proof.step4.title': 'Entrega & Handoff',
-        'proof.step4.desc': 'Você recebe código pronto para produção, documentação e um walkthrough. Tudo é seu \u2014 sem lock-in, sem dependência de mim.',
-        'proof.commitments.title': 'Meus Compromissos com Você',
-        'proof.commitments.subtitle': 'Promessas que faço em todo projeto \u2014 sem exceção.',
-        'proof.c1.title': 'Software funcionando toda semana',
-        'proof.c1.desc': 'Você nunca vai esperar meses por uma "grande revelação." Toda semana, você vê uma demo ao vivo do que foi construído \u2014 e decide o que vem depois.',
-        'proof.c2.title': 'Você é dono de tudo',
-        'proof.c2.desc': 'Cada linha de código, cada asset de design, cada script de deploy. Propriedade intelectual total desde o dia um. Se nossos caminhos se separarem, você leva tudo.',
-        'proof.c3.title': 'Comunicação honesta, sempre',
-        'proof.c3.desc': 'Se algo vai demorar mais, você fica sabendo antes do prazo \u2014 não depois. Prefiro te dar uma verdade difícil cedo do que uma surpresa agradável que nunca é entregue.',
-        'contact.title': 'Vamos conversar?',
-        'contact.subtitle': 'Conta pra mim sobre seu projeto. Respondo em até 24h.',
-        'contact.name': 'Nome',
-        'contact.message': 'Sobre o projeto',
-        'contact.send': 'Enviar Mensagem',
-        'contact.phone': 'Telefone',
-        'contact.elsewhere': 'Redes Sociais',
-        'contact.success': 'Sua mensagem foi enviada! Entrarei em contato em breve.',
-        'contact.error': 'Algo deu errado. Tente novamente ou envie um e-mail diretamente.',
-        'footer.copy': '\u00a9 André Ferraz. Todos os direitos reservados.',
+  <style>
+    :root {
+      --bg: #0f150f;
+      --fg: #e4ebdf;
+      --muted: #98a894;
+      --line: #2d3b2e;
+      --accent: #f0a640;
+      color-scheme: dark;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f3f5ef;
+        --fg: #1a2219;
+        --muted: #51604f;
+        --line: #c3cdbb;
+        --accent: #c46a10;
+        color-scheme: light;
       }
-    };
-
-    let currentLang = localStorage.getItem('lang') || 'en';
-
-    function setLanguage(lang) {
-      currentLang = lang;
-      localStorage.setItem('lang', lang);
-      document.documentElement.lang = lang;
-      document.getElementById('lang-toggle').textContent = lang === 'en' ? 'PT' : 'EN';
-
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-          el.textContent = translations[lang][key];
-        }
-      });
     }
 
-    document.getElementById('lang-toggle').addEventListener('click', () => {
-      setLanguage(currentLang === 'en' ? 'pt' : 'en');
-    });
-
-    // Apply saved language on load
-    if (currentLang !== 'en') {
-      setLanguage(currentLang);
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+      font-size: 16px;
+      line-height: 1.6;
+      display: grid;
+      place-items: center;
+      padding: 32px max(20px, env(safe-area-inset-right, 0px)) 32px max(20px, env(safe-area-inset-left, 0px));
+      -webkit-font-smoothing: antialiased;
     }
 
-    // --- Contact form ---
-    const form = document.getElementById('contact-form');
-    const formSuccess = document.getElementById('form-success');
-    const formError = document.getElementById('form-error');
-    const formButton = document.getElementById('form-button');
+    main { width: 100%; max-width: 44ch; }
 
-    // No-JS fallback: check for ?error=true on page load (backend redirect)
-    var params = new URLSearchParams(window.location.search);
-    if (params.get('error') === 'true') {
-      formError.classList.remove('hidden');
-      form.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      history.replaceState(null, '', window.location.pathname + window.location.hash);
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 28px;
+    }
+    .status::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.25; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .status::before { animation: none; }
     }
 
-    // JS-enhanced submit via fetch
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      formSuccess.classList.add('hidden');
-      formError.classList.add('hidden');
-      formButton.disabled = true;
+    h1 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin: 0 0 20px;
+    }
+    p { margin: 0; }
+    p + p { margin-top: 1em; }
+    .pt { color: var(--muted); }
 
-      fetch(form.action, {
-        method: 'POST',
-        headers: { accept: 'application/json' },
-        body: new FormData(form),
-      })
-        .then(function (res) {
-          if (!res.ok) throw new Error(res.status);
-          formSuccess.classList.remove('hidden');
-          form.reset();
-        })
-        .catch(function (err) {
-          formError.classList.remove('hidden');
-        })
-        .finally(function () {
-          formButton.disabled = false;
-        });
-    });
-  </script>
+    hr {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 32px 0 20px;
+    }
 
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+      font-size: 0.9rem;
+    }
+    a {
+      color: var(--fg);
+      text-decoration: underline;
+      text-decoration-color: var(--line);
+      text-underline-offset: 4px;
+    }
+    a:hover { text-decoration-color: var(--accent); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="status">Work in progress</p>
+
+    <h1>André Ferraz</h1>
+
+    <p>This site is being replanted. The old version was a services page. The next one will be a personal garden: notes, projects, and things I am learning, kept in public and tended over time.</p>
+
+    <p class="pt" lang="pt-BR">Este site está sendo replantado. A versão antiga era uma página de serviços. A próxima vai ser um jardim pessoal: notas, projetos e coisas que estou aprendendo, cultivadas aos poucos e em público.</p>
+
+    <hr />
+
+    <nav aria-label="Elsewhere">
+      <a href="mailto:oandreferraz@gmail.com">email</a>
+      <a href="https://github.com/andreferrazz" rel="me">github</a>
+      <a href="https://www.linkedin.com/in/oandreferraz" rel="me">linkedin</a>
+    </nav>
+  </main>
 </body>
 </html>
